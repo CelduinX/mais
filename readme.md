@@ -9,20 +9,16 @@ Welcome to the **Fabric Server Edition** of MAIS – Minecraft As It Should. Thi
 ### 1. Download the Server Pack
 Grab the Fabric server pack from the provided link.
 
-### 2. Extract the Server Pack
-Extract the downloaded pack to a location of your choice.
-
-### 3. Create a `start.bat` File
-Create a `start.bat` file in the server directory with the following content. Replace `<YOUR JAVA START ARGUMENTS>` with the arguments you prefer:
-
+### 2. Create a `start.bat` File
+Create a `start.bat` file in the server directory with the following content:
 `java -Xms10G -Xmx10G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar paper.jar --nogui`
 
-### 4. Adjust RAM Allocation
+### 3. Adjust RAM Allocation
 Modify the RAM values in your Java arguments:
 - **`-Xms`**: Minimum RAM (e.g., 4G for 4GB)
 - **`-Xmx`**: Maximum RAM (e.g., 8G for 8GB or more).
 
-### 5. Save and Start the Server
+### 4. Save and Start the Server
 Save the `start.bat` file and double-click it to start your server.
 
 ---
