@@ -1,40 +1,60 @@
-# MAIS – Minecraft As It Should
+# MAIS – Minecraft As It Should (Fabric Server Edition)
 
-Welcome to **MAIS – Minecraft As It Should**, the ultimate modpack that transforms Minecraft into the experience it was always meant to be. Carefully designed to enhance exploration, visuals, mechanics, and performance, MAIS offers a perfect balance between innovation and the classic Minecraft feel. Whether you're an adventurer, builder, or explorer, MAIS brings your world to life like never before.
-
----
-
-## 🌟 Key Features
-
-### 🌍 **World Generation**
-- **150+ New Biomes**: Discover stunning landscapes with unmatched diversity.
-- **200+ Enhanced Structures**: Explore revamped dungeons, strongholds, and villages.
-- **Reimagined Dimensions**: Dive into a completely overhauled Nether and End.
-- **Dynamic Elements**: Realistic tree physics, falling leaves, and scenic rivers with bridges.
-
-### 🎨 **Visual & Sound Upgrades**
-- **Complementary Shaders**: Experience cinematic lighting, water, and shadows.
-- **3D Models & Animations**: Bring blocks, mobs, and items to life.
-- **Immersive Audio**: Ambient sounds, sound physics, and enhanced block effects.
-
-### ⚙️ **Quality of Life**
-- **Improved Crafting**: Keep items in grids and view Shulker box contents instantly.
-- **Easier Navigation**: Fullscreen maps, waypoints, and optimized keybindings.
-- **Smarter Mechanics**: Auto-tool replacement, Elytra slots, and moveable chests.
-
-### 🛠️ **Performance Optimizations**
-- Powered by **Sodium**, **Lithium**, and **FerriteCore** for smoother gameplay.
-- Efficient rendering with **Entity Culling** and faster chunk loading.
-
-### 🔧 **Gameplay Enhancements**
-- **New Enchantments** and expanded anvil options.
-- **Grave System**: Recover items safely after death.
-- **Integrated Voice Chat** for seamless multiplayer communication.
+Welcome to the **Fabric Server Edition** of MAIS – Minecraft As It Should. This version is tailored for server administrators who want to provide their players with the ultimate Minecraft multiplayer experience. With enhanced exploration, visuals, mechanics, and performance, MAIS ensures a smooth and immersive server environment while staying true to the essence of Minecraft.
 
 ---
 
-## Why Choose MAIS?
+## 📋 Quick Start Guide
 
-MAIS takes your Minecraft adventure to the next level while staying true to its core. This modpack isn’t just about adding features—it’s about making every moment of gameplay feel more immersive, exciting, and rewarding. Build breathtaking structures, explore endlessly diverse landscapes, and enjoy the smoothest gameplay experience possible.
+### 1. Download the Server Pack
+Grab the Fabric server pack from the provided link.
 
-> Ready to see Minecraft as it should be? Download MAIS now and elevate your journey!
+### 2. Extract the Server Pack
+Extract the downloaded pack to a location of your choice.
+
+### 3. Create a `start.bat` File
+Create a `start.bat` file in the server directory with the following content. Replace `<YOUR JAVA START ARGUMENTS>` with the arguments you prefer:
+
+\`\`\`bash
+java -Xms10G -Xmx10G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar paper.jar --nogui
+\`\`\`
+
+### 4. Adjust RAM Allocation
+Modify the RAM values in your Java arguments:
+- **`-Xms`**: Minimum RAM (e.g., 4G for 4GB)
+- **`-Xmx`**: Maximum RAM (e.g., 8G for 8GB or more).
+
+### 5. Save and Start the Server
+Save the `start.bat` file and double-click it to start your server.
+
+---
+
+## 🔧 System Requirements
+
+### Minimum for ~10 Players:
+- **4-Core CPU**
+- **16 GB RAM**
+- **SSD** (Solid State Drive for faster data access)
+- **10 Mbit Upload** (to ensure smooth player connections)
+
+---
+
+## 🚀 Key Features for Server Administrators
+
+### 🌍 World Generation
+- **150+ New Biomes** for breathtaking exploration.
+- **200+ Enhanced Structures**, including revamped dungeons, villages, and strongholds.
+- **Reimagined Nether and End**, providing a richer multiplayer dimension experience.
+
+### ⚙️ Quality of Life Enhancements
+- Improved mechanics for easier multiplayer interactions.
+- Optimized performance for smooth gameplay, even with multiple players.
+- Integrated voice chat for seamless communication.
+
+### 🛠️ Performance Optimizations
+- Powered by **Sodium**, **Lithium**, and other Fabric performance mods.
+- Efficient chunk loading and entity rendering for minimal lag.
+
+---
+
+> Get started with MAIS and bring your multiplayer Minecraft server to life with the perfect blend of innovation and tradition!
